@@ -17,7 +17,7 @@
     	<a href="
     		{% assign TWurl = page.name | replace: '.md', '.html' | prepend: '/zh-TW/' %}
     		{% if urlList contains TWurl %}
-    			{{ page.name | prepend: '../zh-CN/' | replace: '.md', '.html' }}
+    			{{ page.name | prepend: '../zh-TW/' | replace: '.md', '.html' }}
     		{% else %}
     			../zh-TW/index.html
     		{% endif %}	
